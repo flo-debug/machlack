@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ project_name }} - Photography Portfolio</title>
+    <!-- TailwindCSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-10">
+        <a href="/" class="text-blue-500 hover:text-blue-700">&larr; Back to Portfolio</a>
+        <h1 class="text-4xl font-bold text-center mb-10">Project: {{ project_name }}</h1>
+
+        <!-- Grid of Project Images -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            {% for image in images %}
+            <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
+                <img src="/projects/{{ project_name }}/{{ image }}" alt="{{ project_name }}" class="h-48 w-full object-cover">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
