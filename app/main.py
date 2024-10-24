@@ -3,8 +3,26 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 import os
+import httpx  
+import asyncio  
 
 app = FastAPI()
+
+async def ping_self():  
+    interval = 300  # Interval in seconds  
+    url = "https://machlack.onrender.com"  # Replace with your Render URL  
+    while True:  
+        try:  
+            async with httpx.AsyncClient() as client:  
+                response = await client.get(url)  
+                print(f"Reloaded at {response.headers['Date']}: Status Code {response.status_code}")  
+        except Exception as e:  
+            print(f"Error reloading: {str(e)}")  
+        await asyncio.sleep(interval)  
+  
+@app.on_event("startup")  
+async def startup_event():  
+    task = asyncio.create_task(ping_self())  
 
 # Define paths for templates and static files
 templates = Jinja2Templates(directory="app/templates")
