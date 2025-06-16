@@ -1,1 +1,3 @@
-
+1983 in Deutschland geboren und aufgewachsen, fing Flo in frühestem Kindesalter an zu zeichnen und zu malen. Im Alter von ca.13 Jahren fing er schließlich mit dem Malen von Graffiti an.
+Von diesem Zeitpunkt an wurden andere Hobbys wie Fußball oder Tae Kwon Do zweitrangig und am Ende ganz überflüssig. Schnell flossen jeder Pfennig Taschengeld in dieses Hobby, welches dann noch für Jahre nur ein Hobby bleiben sollte. 
+Nach verschieden Jobs, z.B. als Bau,- und Fabrikarbeiter, begann er schließlich ein Studium zum Produktdesigner, welches er auch als Dipl. Des. abschloss um daraufhin in der Werbebranche zu arbeiten. Letztendlich wurde das Hobby dann doch zum Beruf und einige der Bilder, die daraus bisher entstanden sind, kannst Du nun auf dieser website bewundern.
